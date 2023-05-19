@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <div class="dashboard-container">
+      <div class="nav">
+        <ul class="left-link">
+          <li>
+            <a href="">Dashboard</a>
+          </li>
+          <li>
+            <a href="">Projects</a>
+          </li>
+          <li>
+            <a href="">Users</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="right-link">
+          <li class="cta">
+            <a href="">+ Add new segment</a>
+          </li>
+          <li>
+            <a href="">🔔</a>
+          </li>
+          <li>
+            <img src="./images/man.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="left">
+          <img src="./images/man.jpg" alt="">
+          <p>Ugrade to <span>PRO</span> to unlock more features</p>
+          <a href="">UPGRADE</a>
+        </div>
+        <div class="right">
+          <div class="users-section">
+            <div class="users">
+              <span>Users</span>
+              <h3>9,452</h3>
+              <div class="graph" id="graph1">
+                <canvas></canvas>
+              </div>
+            </div>
+            <div class="new-users">
+              <span>New users</span>
+              <h3>6,245</h3>
+              <div class="graph" id="graph2">
+                <canvas></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="info-section">
+            <div class="direct">
+              <p>24% Direct</p>
+            </div>
+            <div class="social">
+              <p>31% Social</p>
+            </div>
+            <div class="organic">
+              <p>45% Organic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.min.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

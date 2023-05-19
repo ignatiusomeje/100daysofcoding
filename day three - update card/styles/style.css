@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1a1c20;
+  --secondary-color: #232428;
+  --text-color: white;
+  --border-color: #16171b;
+}
+
+.light-mode {
+  --primary-color: white;
+  --secondary-color: gold;
+  --text-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+}
+.container .card-container {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 15px;
+  box-shadow: 0 0 0.5rem var(--border-color);
+}
+@media screen and (max-width: 537px) {
+  .container .card-container {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .container .card-container {
+    width: 80%;
+    height: unset;
+    padding: 0.1rem 1rem;
+  }
+}
+.container .card-container .dark {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.container .card-container .thunder {
+  animation: rotateThunder 1s linear infinite;
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+}
+@keyframes rotateThunder {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 435px) {
+  .container .card-container .thunder {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+.container .card-container h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 435px) {
+  .container .card-container h2 {
+    font-size: 1.5rem;
+  }
+}
+.container .card-container p {
+  color: gray;
+  width: 18rem;
+  text-align: center;
+  margin: 1.2rem auto;
+}
+@media screen and (max-width: 435px) {
+  .container .card-container p {
+    width: 100%;
+  }
+}
+.container .card-container .preference {
+  background-color: var(--border-color);
+  padding: 0.8rem 3rem;
+  border-radius: 5px;
+  display: block;
+  width: 18rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 3rem auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 435px) {
+  .container .card-container .preference {
+    width: 100%;
+    padding: 0.8rem 1rem;
+  }
+}
+.container .card-container .preference span {
+  font-size: 1.4rem;
+}/*# sourceMappingURL=style.css.map */
