@@ -1,0 +1,85 @@
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  .review-wrapper {
+    width: 40%;
+    color: white;
+    background-color: gray;
+    .header {
+      .left-header {
+        .form-control {
+          box-shadow: none;
+        }
+      }
+      .right-header {
+        .insight {
+          .insight-link {
+            cursor: pointer;
+            background-color: black;
+            &:hover {
+              background-color: rgb(153, 0, 255);
+            }
+          }
+        }
+      }
+    }
+    .reviews {
+      .review {
+        .name {
+          .star {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.2px;
+            text-indent: 12px;
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 50px;
+              height: 50px;
+              background-color: rgb(209, 70, 70);
+              border-radius: 50%;
+              padding: 1rem;
+              font-size: 1.5rem;
+              text-indent: 0;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1500px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 1074px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 773px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 686px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 519px) {
+      .right-header {
+        .insight {
+          .insight-link {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

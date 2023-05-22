@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(206, 196, 196);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .link-section-container {
+  width: 900px;
+  background-color: white;
+  padding: 3rem 3rem 5rem;
+  border-radius: 10px;
+}
+.container .link-section-container h2 {
+  width: 450px;
+}
+.container .link-section-container .links-section {
+  width: 800px;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.container .link-section-container .links-section .blogs {
+  width: 250px;
+  background-color: white;
+  padding: 2rem 1rem 0;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.479);
+}
+.container .link-section-container .links-section .blogs h2 {
+  padding: 1rem;
+}
+.container .link-section-container .links-section .blogs .blog {
+  padding: 1rem;
+}
+.container .link-section-container .links-section .blogs .blog p {
+  margin-bottom: 0.5rem;
+}
+.container .link-section-container .links-section .blogs .blog a {
+  color: gold;
+  text-decoration: none;
+}
+.container .link-section-container .links-section .blogs .blog:hover {
+  background-color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .link-section-container .links-section .links {
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+}
+.container .link-section-container .links-section .links .link {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 1rem 0.9rem;
+  border-radius: 5px;
+}
+.container .link-section-container .links-section .links .link span,
+.container .link-section-container .links-section .links .link h4,
+.container .link-section-container .links-section .links .link p {
+  margin-bottom: 1rem;
+}
+.container .link-section-container .links-section .links .link span {
+  background-color: gold;
+  height: 50px;
+  width: 50px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container .link-section-container .links-section .links .link:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+.container .link-section-container .links-section .links .link:hover span {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=index.css.map */
