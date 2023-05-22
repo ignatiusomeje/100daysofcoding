@@ -1,1 +1,12 @@
-/*# sourceMappingURL=index.css.map */
+.container-fluid {
+  min-height: 100vh;
+}
+
+.facebook {
+  background-color: #425A98;
+  color: white;
+}
+.facebook:hover {
+  color: white;
+}/*# sourceMappingURL=index.css.map */
+<i class="fa-brands fa-reddit"></i>
