@@ -1,0 +1,57 @@
+.container-fluid{
+  .row{
+    min-height: 100vh;
+    .card{
+      width: 50%;
+      @media screen and (max-width:886px) {
+        width: 60%;        
+      }
+      @media screen and (max-width:724px) {
+        width: 70%;        
+      }
+      @media screen and (max-width:628px) {
+        width: 80%;        
+      }
+      @media screen and (max-width:543px) {
+        width: 90%;        
+      }
+    }
+    .background-curve{
+      height: 80vh;
+      width: 50%;
+      background-color: #9677EF;
+      border-radius: 50%;
+      top: 10vh;
+      @media screen and (max-width:886px) {
+        width: 60%;        
+      }
+      @media screen and (max-width:724px) {
+        width: 70%;        
+      }
+      @media screen and (max-width:628px) {
+        width: 80%;        
+      }
+      @media screen and (max-width:543px) {
+        width: 90%;        
+      }
+    }
+    
+  }
+}
+.btn-close{
+  top: 1rem;
+  right: 1rem;
+  margin-bottom: .5rem;
+}
+.sharing-guide{
+ background-color: #F9FAFE;
+}
+.share-btn, .background-curve{
+  background-color: #9677EF ;
+}
+.read-more-link{
+  color: #9677EF ;
+  &:hover{
+    // color: #9677EF 
+  }
+}
