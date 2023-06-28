@@ -1,0 +1,82 @@
+.container-fluid {
+  .container {
+    background-color: #f8f9ff;
+    width: 100%;
+    min-height: 90vh;
+    .right{
+      width: 50%;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      .placard{
+        width: 400px;
+        height: 200px;
+      }
+      .btn-close{
+        top: .5rem;
+        right: .5rem;
+        @media screen and (max-width: 576px) {
+          top: .2rem;
+          right: .2rem;
+        }
+      }
+      .inner{
+        background-color: #fff;
+        border-color: #021F65 !important;
+        .clip{
+          background-color: #021F65;
+        }
+      }
+      .icons {
+        span {
+          width: 30px;
+          height: 30px;
+          &:hover{
+            border-color: red !important;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
+          }
+        }
+      }
+      .get{
+        background-color: #021F65 !important;
+      }
+    }
+    .colored {
+      width: 50%;
+      background-color: #022063;
+      clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+      @media screen and (max-width: 1200px) {
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+      }
+      @media screen and (max-width: 767px) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+      }
+      .placard{
+        width: 400px;
+        height: 200px;
+      }
+      .inner{
+        background-color: #071637;
+      }
+      .btn-close{
+        top: .5rem;
+        right: .5rem;
+        @media screen and (max-width: 576px) {
+          top: .2rem;
+          right: .2rem;
+        }
+      }
+      .icons {
+        span {
+          width: 30px;
+          height: 30px;
+          &:hover{
+            border-color: white !important;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
+          }
+        }
+      }
+    }
+  }
+}
